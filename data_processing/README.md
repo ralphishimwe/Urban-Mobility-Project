@@ -1,19 +1,6 @@
 # NYC Taxi Trip Data - Data Processing & Cleaning
 This project processes and cleans the NYC Taxi Trip dataset for analysis and database storage.
 
-## Data processing Structure
-Urban-Mobility-Project/
-├── data_processing/
-│   ├── raw/
-│   │   └── train.csv              # Sample raw data (not complete dataset)
-│   ├── clean_data.py              # Main cleaning script
-│   ├── utils.py                   # Helper functions
-│   ├── config.py                  # Configuration settings
-│   ├── requirements.txt           # Python dependencies
-│   ├── cleaned_trips.csv          # Output: Cleaned data (generated after running)
-│   └── excluded_records.csv       # Output: Removed records log (generated after running)
-└── README.md
-
 ## Important Note About Dataset
 
 **The `train.csv` file in this repository contains only a SAMPLE of the dataset** because:
