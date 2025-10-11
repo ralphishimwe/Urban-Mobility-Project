@@ -13,7 +13,7 @@ This project processes and cleans the NYC Taxi Trip dataset for analysis and dat
 3. Place the full `train.csv` file in the `data_processing/raw/` folder
 4. Run the cleaning script
 
-## 🚀 Setup Instructions
+## Setup Instructions
 
 ### Installation Steps
 
