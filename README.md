@@ -2,6 +2,15 @@
 
 A full-stack web application for analyzing NYC taxi trip data with interactive visualizations and filtering capabilities.
 
+## Video Walkthrough
+🎥 **[Watch Demo Video]**
+- Watch Here::[https://www.loom.com/share/d0573e8d00f8488c8030e4f8678facf5?sid=69094e9f-beed-4912-9f73-ad994f82958a]
+- Overview of system architecture
+- Feature demonstrations
+- Technical explanations
+
+## Setup Instructions
+...
 ## Prerequisites
 
 1. Python 3.9+ installed
