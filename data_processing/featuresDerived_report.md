@@ -1,4 +1,4 @@
-### Derived Features Justification (for your report):
+### Derived Features Justification:
 1. Trip Distance (km) - Haversine Formula
 
 Why: The dataset doesn't include distance, only coordinates. Distance is essential for analyzing fare efficiency, route optimization, and detecting anomalies.
