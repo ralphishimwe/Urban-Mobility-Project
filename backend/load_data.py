@@ -13,7 +13,7 @@ DB_PARAMS = {
     "user": os.getenv("DB_USER"),
     "password": os.getenv("DB_PASSWORD"),
     "host": os.getenv("DB_HOST"),
-    "port": os.getenv("DB_PORT", "5432"),  # default to 5432 if not set
+    "port": os.getenv("DB_PORT", "5432"),  
     "sslmode": "require"
 }
 
@@ -85,7 +85,7 @@ def insert_data(records):
         conn = psycopg2.connect(**DB_PARAMS)
         cur = conn.cursor()
         
-        # Optional: verify connection
+        
         cur.execute("SELECT current_database(), current_user;")
         db_name, user = cur.fetchone()
         print(f"✅ Connected to DB: '{db_name}' as user: '{user}'")

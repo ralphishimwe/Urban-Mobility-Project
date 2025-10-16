@@ -39,7 +39,7 @@ def get_trips(
     min_distance: float = Query(None, ge=0, description="Minimum trip distance (km)"),
     max_distance: float = Query(None, ge=0, description="Maximum trip distance (km)")
 ):
-    # Build dynamic WHERE clause
+
     filters = []
     params = {"limit": limit}
 
