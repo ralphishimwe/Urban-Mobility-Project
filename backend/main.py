@@ -132,3 +132,13 @@ def get_stats():
         result = conn.execute(text(query))
         stats = dict(result.fetchone()._mapping)
     return stats
+
+from fastapi.middleware.cors import CORSMiddleware
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Allow all for development
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
