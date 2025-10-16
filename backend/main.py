@@ -121,9 +121,9 @@ def get_stats():
     query = """
         SELECT
             COUNT(*) AS total_trips,
-            ROUND(AVG(trip_duration), 2) AS avg_trip_duration_sec,
-            ROUND(AVG(trip_distance_km), 2) AS avg_trip_distance_km,
-            ROUND(AVG(trip_speed_kmh), 2) AS avg_trip_speed_kmh,
+            CAST(AVG(trip_duration) AS DECIMAL(10,2)) AS avg_trip_duration_sec,
+            CAST(AVG(trip_distance_km) AS DECIMAL(10,2)) AS avg_trip_distance_km,
+            CAST(AVG(trip_speed_kmh) AS DECIMAL(10,2)) AS avg_trip_speed_kmh,
             MODE() WITHIN GROUP (ORDER BY pickup_hour) AS most_active_hour,
             MODE() WITHIN GROUP (ORDER BY pickup_weekday) AS most_active_weekday
         FROM trips
